@@ -1,0 +1,11 @@
+---
+applications:
+- name: redis-demo-app
+  command: node index.js
+  memory: 256M
+  instances: 1
+  path: .
+  env:
+    REDIS_PORT: 6379
+    REDIS_HOST: 'your-redis-host'
+    REDIS_PASSWORD: 'your-redis-port'
